@@ -1,0 +1,20 @@
+# DISCLAIMER - BMI Calculator
+
+This BMI calculator is for **informational purposes only** and is not a substitute for professional medical advice, diagnosis, or treatment.
+
+## Important Notes:
+- The calculations are estimates based on standard formulas
+- Results may not be accurate for:
+  - Athletes and bodybuilders (high muscle mass)
+  - Pregnant or breastfeeding women
+  - Elderly individuals
+  - Children and adolescents
+  - People with certain medical conditions
+
+## Always Consult a Professional:
+Before making any decisions about your health, diet, or exercise routine based on these results, please consult with a qualified healthcare provider.
+
+## No Liability:
+The creators of this tool assume no responsibility for any consequences arising from its use.
+
+*Last updated: [fecha actual]*
