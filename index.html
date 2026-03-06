@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator | Body Mass Index - Healthy Weight Range</title>
+    <meta name="description" content="Free BMI Calculator: Calculate your Body Mass Index instantly. Know if you're underweight, normal, overweight or obese.">
+    <meta name="keywords" content="BMI calculator, body mass index, healthy weight">
+    <meta property="og:title" content="BMI Calculator - Check Your Body Mass Index">
+    <meta property="og:description" content="Free, accurate BMI calculator with instant results">
+    <meta property="og:type" content="website">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="page-wrapper">
+        <div class="container">
+            <header>
+                <div class="language-selector">
+                    <button class="lang-btn active" data-lang="en">EN</button>
+                    <button class="lang-btn" data-lang="es">ES</button>
+                </div>
+                <h1 id="title">BMI Calculator</h1>
+                <p class="subtitle" id="subtitle">Body Mass Index — Know Your Health Status</p>
+            </header>
+            
+            <main>
+                <div class="calculator-card">
+                    <div class="input-group">
+                        <label for="weight" id="weightLabel">Weight (kg):</label>
+                        <input type="number" id="weight" step="0.1" placeholder="e.g., 70" required>
+                    </div>
+                    
+                    <div class="input-group">
+                        <label for="height" id="heightLabel">Height (cm):</label>
+                        <input type="number" id="height" step="0.1" placeholder="e.g., 170" required>
+                    </div>
+                    
+                    <button id="calculateBtn" class="calculate-btn">Calculate BMI</button>
+                </div>
+
+                <div id="result" class="result-card hidden">
+                    <h2><span id="yourBmiText">Your BMI is:</span> <span id="bmi-value" class="bmi-number">-</span></h2>
+                    <p id="bmi-category" class="bmi-category"></p>
+                    <div id="bmi-detail" class="bmi-detail"></div>
+                    <div class="ad-space" id="affiliateSpace"></div>
+                </div>
+
+                <div class="info-section">
+                    <h3 id="categoriesTitle">BMI Categories (WHO Standards)</h3>
+                    <div class="categories-grid">
+                        <div class="category-item underweight">
+                            <span class="range" id="underweightRange">Below 18.5</span>
+                            <span class="label" id="underweightLabel">Underweight</span>
+                        </div>
+                        <div class="category-item normal">
+                            <span class="range">18.5 - 24.9</span>
+                            <span class="label" id="normalLabel">Normal weight</span>
+                        </div>
+                        <div class="category-item overweight">
+                            <span class="range">25.0 - 29.9</span>
+                            <span class="label" id="overweightLabel">Overweight</span>
+                        </div>
+                        <div class="category-item obese">
+                            <span class="range" id="obeseRange">30.0 and above</span>
+                            <span class="label" id="obeseLabel">Obese</span>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            
+            <footer>
+                <p>© <span id="current-year"></span> <span id="footerText">BMI Calculator. For informational purposes only.</span></p>
+            </footer>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
